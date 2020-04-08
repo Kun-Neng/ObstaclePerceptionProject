@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c63c4d5b3effeb4fae04cd0a89481ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputfile: D:\iris-2lg34dn.csv
+  inputfile: iris-2lg34dn.csv
   PointPrefab: {fileID: 2055182723}
 --- !u!4 &69331136
 Transform:

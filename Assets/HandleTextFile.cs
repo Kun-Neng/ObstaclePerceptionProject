@@ -7,8 +7,11 @@ using System.Collections.Generic;
 
 public class HandleTextFile {
 	public static List<float[]> ReadString(string file) {
-		// string path = "Assets/Resources/test.txt";
-		//Read the text from directly from the test.txt file
+		// Debug.Log (Application.dataPath);
+		file = Application.dataPath + '/' + file;
+		// Debug.Log (file);
+
+		// Read the text from directly from the test.txt file
 		StreamReader filereader = new StreamReader(file);
 		string filedata = filereader.ReadToEnd();
 
@@ -24,7 +27,7 @@ public class HandleTextFile {
 				float z = Convert.ToSingle(pointtoken [2]);
 				float[] point = new float[]{x, y, z};
 				pointList.Add(point);
-				//Debug.Log(pointtoken[0], pointtoken[1], pointtoken[2]);
+				// Debug.Log(pointtoken[0], pointtoken[1], pointtoken[2]);
 			}
 
 			reader.Close();
